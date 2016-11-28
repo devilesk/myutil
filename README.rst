@@ -1,4 +1,4 @@
 myutil
 =========
 
-Utils
+Python functions for doing common things

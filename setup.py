@@ -15,7 +15,7 @@ setuptools.setup(
     author="devilesk",
     author_email="devilesk@gmail.com",
 
-    description="Util library.",
+    description="My python util library.",
     long_description=open('README.rst').read(),
 
     py_modules=['myutil'],
