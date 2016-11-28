@@ -3,6 +3,7 @@ myutil
 
 Python functions for doing common things
 
-## Install ##
+Install
+-----------------
 
 `pip install git+git://github.com/devilesk/myutil.git`
