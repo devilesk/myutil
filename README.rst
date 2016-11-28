@@ -7,3 +7,5 @@ Install
 -----------------
 
 `pip install git+git://github.com/devilesk/myutil.git`
+
+`pip install -e git+git://github.com/devilesk/myutil.git#egg=Package`
