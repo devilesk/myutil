@@ -71,7 +71,7 @@ def resize(src, dst, fn, size, check_dst=True):
     im = Image.open(infile)
     im.thumbnail(size, Image.ANTIALIAS)
     outfile = os.path.join(dst, fn)
-    im.save(dst + fn)
+    im.save(outfile)
 
 def resize_folder(src, dst, size, check_dst=True):
     if check_dst:
