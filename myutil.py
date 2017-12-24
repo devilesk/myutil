@@ -1,10 +1,10 @@
-__version__ = '0.1.1'
+__version__ = '0.2.0'
 
 import os
 import errno
 import json
 import shutil
-import urllib2
+import urllib.request, urllib.error, urllib.parse
 from PIL import Image
 
 def make_sure_path_exists(path):
@@ -42,7 +42,7 @@ def copy(src, dst):
         if e.errno == errno.ENOTDIR:
             shutil.copy(src, dst)
         else:
-            print('Directory not copied. Error: %s' % e)
+            print(('Directory not copied. Error: %s' % e))
 
 def copytree(src, dst, symlinks=False, ignore=None):
     make_sure_path_exists(dst)
@@ -107,7 +107,7 @@ def format_num(x):
         return x
 
 def download_file_from(url, dst):
-    response = urllib2.urlopen(url)
+    response = urllib.request.urlopen(url)
     with open(dst, 'w') as f:
         f.write(response.read())
 
